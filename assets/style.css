@@ -1,0 +1,92 @@
+#form-container {
+Margin: 20px;
+Padding: 15px;
+Background: #173459;
+Color: white;
+Box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+.input-cnt {
+Display: flex; /* display the icon and the input in a line */
+Margin-bottom: 15px;
+}
+.input-cnt:last-child {
+Margin-bottom: 0px;
+}
+.input-cnt > I {
+Min-width: 40px; /* set a minimum width for the icon */
+Padding: 10px; /* make sure the icon is centered vertically */
+Text-align: center; /* horizontally center the icon */
+Background: lightgrey;
+Border-top-left-radius: 20px;
+Border-bottom-left-radius: 20px;
+Color: #0076ff;
+}
+/* change styles when focused */
+.input-cnt:hover > I {
+Background: #0076ff;
+Color: white;
+}
+/* style the input and textarea */
+.input-cnt > input[type=”text”], .input-cnt > textarea {
+Outline: none;
+Border: none;
+Padding: 10px;
+Border: 1px solid lightgrey;
+Border-top-right-radius: 20px;
+Border-bottom-right-radius: 20px;
+Width: 100%;
+}
+/* center textarea icon and increase size */
+.textarea-icon {
+Padding: 60px 10px !important; /* top and bottom paddings are set to 60px */
+}
+/* style the submit button */
+.input-cnt > input[type=”submit”] {
+Border: none;
+Border-radius: 20px;
+Outline: none;
+Width: 75%;
+Margin: 0 auto;
+Font-size: 105%;
+Padding: 8px;
+Color: #0076ff;
+Background: white;
+Transition-duration: .5s;
+}
+/* add a hover effect for the submit button */
+.input-cnt > input[type=”submit”]:hover {
+Color: white;
+Background: #0076ff;
+}
+</style>
+.breadcrumbs {
+Background: #0076ff;
+Padding: 15px;
+}
+.breadcrumbs ul {
+Margin: 0;
+Padding: 0;
+}
+.breadcrumbs li {
+Display: inline-block;
+}
+.breadcrumbs li::before {
+Content: “⟩ “; /* change this character if you need to */
+Color: white;
+Margin: 0 8px;
+}
+/* change the character to insert before the first breadcrumbs link */
+.breadcrumbs li:first-child::before {
+Content: “/ “; /* change this character if you need to */
+Color: white;
+Margin: 0 0;
+}
+.breadcrumbs li > a {
+Color: white;
+Text-decoration: none;
+Border-bottom: 1px solid white;
+}
+.breadcrumbs li:last-child > a {
+Color: white;
+Text-decoration: none;
+Border: none;
